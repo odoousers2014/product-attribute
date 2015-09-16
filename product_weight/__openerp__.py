@@ -1,9 +1,10 @@
-# -*- encoding: utf-8 -*-
+# -*- coding: utf-8 -*-
+
 ##############################################################################
 #
 #    OpenERP, Open Source Management Solution
-#    Copyright (c) 2015 Domatix (http://domatix.com)
-#                       Angel Moua <angel.moya@domatix.com>
+#    Copyright (C) 2013 Savoir-faire Linux (<http://www.savoirfairelinux.com>).
+#    Copyright (C) 2015 Akretion (<http://www.akretion.com>).
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -20,5 +21,17 @@
 #
 ##############################################################################
 
-from . import models
-from .models.product_product import update_null_and_slash_codes
+{'name': 'Product Weight Calculation',
+ 'version': '0.2',
+ 'author': 'Savoir-faire Linux,Akretion,Odoo Community Association (OCA)',
+ 'website': 'http://www.savoirfairelinux.com',
+ 'license': 'AGPL-3',
+ 'category': 'Warehouse',
+ 'summary': 'Allows to calculate products weight from its components.',
+ 'depends': ['mrp',
+             ],
+ 'data': ['wizard/product_weight_update_view.xml',
+          'product_view.xml',
+          ],
+ 'installable': True,
+ }

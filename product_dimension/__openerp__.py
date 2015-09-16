@@ -1,9 +1,6 @@
-# -*- encoding: utf-8 -*-
-##############################################################################
-#
-#    OpenERP, Open Source Management Solution
-#    Copyright (c) 2015 Domatix (http://domatix.com)
-#                       Angel Moua <angel.moya@domatix.com>
+# -*- coding: utf-8 -*-
+#    Copyright 2015 Camptocamp SA
+#    Copyright (C) 2015  ADHOC SA  (http://www.adhoc.com.ar)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -17,8 +14,12 @@
 #
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-##############################################################################
-
-from . import models
-from .models.product_product import update_null_and_slash_codes
+{
+    'name': 'Product Dimension',
+    'version': '2.0',
+    'category': 'Product',
+    'author':  'ADHOC SA,Camptocamp,Odoo Community Association (OCA)',
+    'license': 'AGPL-3',
+    'depends': ['product'],
+    'data': ['product_view.xml'],
+}
